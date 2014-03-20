@@ -6,6 +6,7 @@ body
 {
 	background: #EEEEEE;
 	font-family: Arial;
+	/* De acuerdo con EM, es el tamaño fijo de la letra, 2em equivaldría a 32px y 1.5em equivaldría a 24px */
 	font-size: 16px;
 	font-weight: normal;
 }
@@ -27,6 +28,7 @@ footer p:last-child
 }
 footer p:last-child:before
 {
+	/* Espacio antes, ya que se declara un "antes" */
 	content: "- "
 }
 footer p:last-child:after
@@ -35,8 +37,8 @@ footer p:last-child:after
 }
 header
 {
-	
-	background: #343b54;
+	/* Estaba mla el color */
+	background: #344b54;
 	color: white;
 	overflow: hidden;
 	padding: 0.5em;
@@ -46,7 +48,7 @@ header
  {
  	float: left;
  }
-}
+ /* Sobraba una llave */
 header h1
 {
 	font-size: 1.2em;
@@ -57,7 +59,8 @@ header h1
 
 header #avatar
 {	
-	margin: 0.5em 1em 0 0;
+	/* mal declaración de margenes */
+	margin: 0.5em 0.5em 0 0;
 	position: absolute;
 	top:0;
 	right: 0;
@@ -69,6 +72,16 @@ header #avatar img
 	width: 55px;
 
 }
+
+
+/* Normalize no te lo hizo, hay que hacerlo, resetear estilos de ésta caja */
+header #logo {
+	margin: 0;
+	padding: 0;
+}
+/* end */
+
+
  header  #logo img 
  {
  	border-right: 1px solid white ;
@@ -77,6 +90,7 @@ header #avatar img
  	width: 52px;
 
  }
+ 
  nav
  {
  	background: #80BCA3;
@@ -91,34 +105,40 @@ header #avatar img
 	padding: 0;
 
  }
+ nav ul li 
+ {
+ 	display: inline-block;
+ 	margin: 0 0.5em 0 0 ;
+ 	/* Estabas declarando mal los margenes */
+ }
+ nav ul li a
+ {
+ 	color: white;
+ 	display: block;
+ 	padding: 0.5em;
+ 	/* te faltaba quitar la decoración del link */
+	text-decoration: none;
+
+ }
+
+ /* en el ejemplo, esto va después */
  nav ul #publicar_nav
  {
  	position: absolute;
- 	top: -0.8em ;
+ 	/* exageraste tu medida */
+ 	top: -0.1em ;
  	right: 0;
 }
 nav ul #publicar_nav a
 {
 	background: #22BCE0;
 	border-radius: 5px;
-	padding: 0.8em 0.5em;
-	text-decoration: none;
+	/* igual aquí */
+	padding: 0.6em 0.8em;
 	font-style: italic;
 	text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
 	box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 20px;
 
 	
 }
- nav ul li 
- {
- 	display: inline-block;
- 	margin: 0 1.2em 0 0 ;
- }
- nav ul li a
- {
- 	color: white;
- 	display: block;
- 	padding: 0.5em 0;
-
- }
 
