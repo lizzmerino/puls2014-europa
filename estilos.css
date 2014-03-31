@@ -8,6 +8,7 @@ body
 	font-family: Arial;
 	font-size: 16px;
 	font-weight: normal;
+	
 }
 footer
 {
@@ -31,27 +32,26 @@ footer p:last-child:before
 }
 footer p:last-child:after
 {
-	content: "- "
+	content: " -"
 }
 header
 {
-	
-	background: #343b54;
+	background: #344B54;
 	color: white;
 	overflow: hidden;
-	padding: 0.5em;
+	padding: 0.4em;
 	position: relative;
  }
  header figure
  {
  	float: left;
- }
+ 
 }
 header h1
 {
 	font-size: 1.2em;
 	font-weight: normal;
-	margin: 0 70px 0 0;
+	margin: 0 60px 0 0;
 
 }
 
@@ -59,16 +59,21 @@ header #avatar
 {	
 	margin: 0.5em 1em 0 0;
 	position: absolute;
-	top:0;
 	right: 0;
+	top: 0;
+	
 
 }
 header #avatar img
 {	
 	border-radius: 50%;
-	width: 55px;
-
+	width: 50px;
 }
+header #logo {
+	margin: 0;
+	padding: 0;
+}
+
  header  #logo img 
  {
  	border-right: 1px solid white ;
@@ -81,8 +86,6 @@ header #avatar img
  {
  	background: #80BCA3;
  	position: relative;
-
-
  }
  nav ul 
  {
@@ -90,35 +93,33 @@ header #avatar img
 	margin: 0;
 	padding: 0;
 
+}
+ nav ul li 
+ {
+ 	display: inline-block;
+ 	margin: 0 0.5em 0 0 ;
  }
- nav ul #publicar_nav
+ nav ul li a
+ {
+ 	color: white;
+ 	display: block;
+ 	padding: 0.5em ;
+ 	text-decoration: none;
+
+ }
+nav ul #publicar_nav
  {
  	position: absolute;
- 	top: -0.8em ;
+ 	top: -0.1em ;
  	right: 0;
 }
 nav ul #publicar_nav a
 {
 	background: #22BCE0;
 	border-radius: 5px;
-	padding: 0.8em 0.5em;
-	text-decoration: none;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
 	font-style: italic;
-	text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
-	box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 20px;
+	padding: 0.6em 0.8em;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 
-	
 }
- nav ul li 
- {
- 	display: inline-block;
- 	margin: 0 1.2em 0 0 ;
- }
- nav ul li a
- {
- 	color: white;
- 	display: block;
- 	padding: 0.5em 0;
-
- }
-
